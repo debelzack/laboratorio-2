@@ -1,26 +1,22 @@
 # Reading E:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do ej_combinacional_run_msim_gate_vhdl.do 
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do ej_combinacional_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Copying E:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # ** Warning: Copied E:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {ej_combinacional.vho}
+# vcom -93 -work work {C:/Users/Nico/Desktop/TRABAJO DE LABORATORIO FPGA/PARTE A/ej_combinacional.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cycloneiii_atom_pack
-# -- Loading package cycloneiii_components
 # -- Compiling entity ej_combinacional
-# -- Compiling architecture structure of ej_combinacional
+# -- Compiling architecture Behavioral of ej_combinacional
 # 
 # vcom -93 -work work {C:/Users/Nico/Desktop/TRABAJO DE LABORATORIO FPGA/PARTE A/ej_combinacional_testbench.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -34,21 +30,13 @@
 # ** Warning: [4] C:/Users/Nico/Desktop/TRABAJO DE LABORATORIO FPGA/PARTE A/ej_combinacional_testbench.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] C:/Users/Nico/Desktop/TRABAJO DE LABORATORIO FPGA/PARTE A/ej_combinacional_testbench.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
-# vsim -t 1ps -L altera -L cycloneiii -L gate_work -L work -voptargs="+acc"  ej_combinacional_testbench
-# vsim -L altera -L cycloneiii -L gate_work -L work -voptargs=\"+acc\" -t 1ps ej_combinacional_testbench 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  ej_combinacional_testbench
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ej_combinacional_testbench 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.ej_combinacional_testbench(behavior)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cycloneiii.cycloneiii_atom_pack(body)
-# Loading cycloneiii.cycloneiii_components
-# Loading work.ej_combinacional(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading cycloneiii.cycloneiii_io_obuf(arch)
-# Loading cycloneiii.cycloneiii_io_ibuf(arch)
-# Loading cycloneiii.cycloneiii_lcell_comb(vital_lcell_comb)
+# Loading work.ej_combinacional(behavioral)
 # 
 # add wave *
 # view structure

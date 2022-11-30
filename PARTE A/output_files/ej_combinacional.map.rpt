@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ej_combinacional
-Mon Nov 28 16:45:39 2022
+Mon Nov 28 18:39:21 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 28 16:45:39 2022           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 28 18:39:21 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ej_combinacional                                ;
 ; Top-level Entity Name              ; ej_combinacional                                ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 28 16:45:35 2022
+    Info: Processing started: Mon Nov 28 18:39:18 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ej_combinacional -c ej_combinacional
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ej_combinacional.vhd
@@ -255,9 +255,9 @@ Info (21057): Implemented 4 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Mon Nov 28 16:45:39 2022
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4635 megabytes
+    Info: Processing ended: Mon Nov 28 18:39:21 2022
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 
