@@ -1,4 +1,48 @@
-|sumador_completo
+|sumador_restador_completo
+S4 <= D_FF:inst14.Q
+A1 => D_FF:60.D
+CLOCK => D_FF:60.CLOCK
+CLOCK => D_FF:inst9.CLOCK
+CLOCK => D_FF:inst13.CLOCK
+CLOCK => D_FF:inst14.CLOCK
+CLOCK => D_FF:inst6.CLOCK
+CLOCK => D_FF:inst10.CLOCK
+CLOCK => D_FF:omega.CLOCK
+CLOCK => D_FF:inst7.CLOCK
+CLOCK => D_FF:inst11.CLOCK
+CLOCK => D_FF:3.CLOCK
+CLOCK => D_FF:inst8.CLOCK
+CLOCK => D_FF:inst12.CLOCK
+CLOCK => D_FF:6.CLOCK
+SUMAR/RESTAR => didi.IN0
+SUMAR/RESTAR => D_FF:inst13.D
+SUMAR/RESTAR => 8.IN0
+SUMAR/RESTAR => inst15.IN0
+SUMAR/RESTAR => inst16.IN1
+SUMAR/RESTAR => dodo.IN0
+B1 => didi.IN1
+S3 <= D_FF:omega.Q
+A2 => D_FF:inst6.D
+B2 => 8.IN1
+S2 <= D_FF:3.Q
+A3 => D_FF:inst7.D
+B3 => inst15.IN1
+S1 <= D_FF:6.Q
+A4 => D_FF:inst8.D
+B4 => inst16.IN0
+BANDERA_DE_C <= dodo.DB_MAX_OUTPUT_PORT_TYPE
+BANDERA_V <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+BANDERA_S <= D_FF:inst8.Q
+BANDERA_Z <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst14
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|sumador_completo:inst44
 a => f.IN0
 a => cout.IN0
 b => f.IN1
@@ -7,5 +51,110 @@ cin => f.IN1
 cin => cout.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:60
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst9
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst13
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:omega
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|sumador_completo:inst3
+a => f.IN0
+a => cout.IN0
+b => f.IN1
+b => cout.IN1
+cin => f.IN1
+cin => cout.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst6
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst10
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:3
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|sumador_completo:inst4
+a => f.IN0
+a => cout.IN0
+b => f.IN1
+b => cout.IN1
+cin => f.IN1
+cin => cout.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst7
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst11
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:6
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|sumador_completo:inst5
+a => f.IN0
+a => cout.IN0
+b => f.IN1
+b => cout.IN1
+cin => f.IN1
+cin => cout.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst8
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_restador_completo|D_FF:inst12
+D => Q~reg0.DATAIN
+CLOCK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
